@@ -1,0 +1,17 @@
+.form__send {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  padding-right: 56px;
+  background-color: #188ce8;
+  color: $white-color;
+
+  font-family: $mainfont;
+  font-style: 700;
+  font-size: 16px;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}

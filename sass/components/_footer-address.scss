@@ -1,0 +1,22 @@
+.footer__address {
+  margin-bottom: 9px;
+
+  color: $white-color;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    width: 232px;
+  }
+}

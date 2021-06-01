@@ -1,0 +1,130 @@
+.ourteam {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+}
+
+.names-work {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0;
+  }
+}
+.names-work__item {
+  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.14);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.description {
+  padding-top: 30px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+
+  color: $primary-text-color;
+
+  background-color: $white-color;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 162px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 192px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 168px;
+    margin: 0;
+  }
+}
+.description__work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.description__names {
+  color: $title-text-color;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.team-list__item {
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.team-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.team-icon {
+  fill: #afb1b8;
+
+  transition: fill 250ms $cubic-bezier;
+
+  .team-list__link:hover &,
+  .team-list__link:focus & {
+    fill: #ffffff;
+  }
+}

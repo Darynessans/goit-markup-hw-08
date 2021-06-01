@@ -1,0 +1,120 @@
+.mobile-menu {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 40px;
+  z-index: 98;
+  background-color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.is-open {
+    top: 0px;
+    left: 0px;
+  }
+}
+.mobile-menu__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.mobile-menu__nav {
+  display: block;
+}
+.menu-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 99;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.is-open .menu-btn__icon-open {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 35.7px;
+}
+
+.mobile-menu__item:hover,
+.mobile-menu__item:focus {
+  color: $accent-color;
+  transition: color $cubic-bezier;
+}
+.tel-link {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  margin-bottom: 32px;
+  text-decoration: none;
+}
+
+.mail-link {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  margin-bottom: 64px;
+  text-decoration: none;
+}
+.mobile-menu__socials {
+  display: flex;
+  width: 357px;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.mobile-link {
+  color: $title-text-color;
+  text-decoration: none;
+}
+.mobile-link--current {
+  color: $accent-color;
+}
+
+.socials__link {
+  color: $accent-color;
+  text-decoration: none;
+}
+.divider {
+  color: rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}

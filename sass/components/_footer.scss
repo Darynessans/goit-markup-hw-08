@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    height: 603px;
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 463px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 252px;
+  }
+}
+.footer__info {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.join-address {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
